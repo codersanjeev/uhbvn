@@ -49,7 +49,7 @@ exports.copyDataToSheet = functions.database.ref("/data").onUpdate(async change 
 	let request = {
 		auth: jwtClient,
 		spreadsheetId: "1MzdfKwIJUkBgSwKRaKAKGrMHTObdVFLcp_FAD-zneSw",
-		range: "Sheet1!A2:AN" + sz,
+		range: "Sheet1!A2:AO" + sz,
 		valueInputOption: "RAW",
 		requestBody: {
 			values: valueArray

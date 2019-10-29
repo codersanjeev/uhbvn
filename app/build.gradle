@@ -38,6 +38,8 @@ dependencies {
     implementation 'com.github.david-serrano:locationprovider:1.2'
     implementation 'com.github.gcacace:signature-pad:1.2.1'
     implementation 'com.google.firebase:firebase-storage:19.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
 
 }
 
