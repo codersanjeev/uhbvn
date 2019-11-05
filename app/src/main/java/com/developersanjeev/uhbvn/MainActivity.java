@@ -124,6 +124,11 @@ public class MainActivity extends AppCompatActivity {
             view.setVisibility(View.VISIBLE);
         }
 
+        String subdivison = preferences.getString(Constants.CURRENT_SUBDIVISON, "NO_REGION");
+        getSupportActionBar().setTitle(region);
+        toolbar.setSubtitle(subdivison);
+        // toolbar.setLogo(R.drawable.mdu_logo);
+
     }
 
     private boolean checkLocationPermission() {
@@ -384,5 +389,14 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.about_menu, menu);
         return true;
+    }
+
+    public void clearForm(View view) {
+        nameEditText.getText().clear();
+        meterNumberEditText.getText().clear();
+        mobileNumberEditText.getText().clear();
+        for (int i = 0; i < 30; i++) {
+            questions[i].clearCheck();
+        }
     }
 }

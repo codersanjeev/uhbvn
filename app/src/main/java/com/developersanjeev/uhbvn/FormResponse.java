@@ -7,31 +7,43 @@ import java.io.Serializable;
 
 @Keep
 public class FormResponse implements Serializable {
-    private String studentName;
-    private String studentEmailID;
-    private String circle;
-    private String subdivision;
+    // Student Name
+    private String c;
 
-    private double latitude;
-    private double longitude;
+    // Student Email ID
+    private String d;
 
-    private String signUrl;
+    // Circle
+    private String e;
 
-    private String name;
-    private String meterNumber;
-    private String mobileNumber;
-    private String dateTimeStamp;
+    // Subdivison
+    private String f;
+
+    private double bLatitude;
+    private double bLongitude;
+
+    // Sign URL
+    private String j;
+
+    // Name
+    private String g;
+    // Meter Number
+    private String h;
+    // Mobile Number
+    private String i;
+    // Date Timestamp
+    private String a;
 
 
-    private String q1;
-    private String q2;
-    private String q3;
-    private String q4;
-    private String q5;
-    private String q6;
-    private String q7;
-    private String q8;
-    private String q9;
+    private String q01;
+    private String q02;
+    private String q03;
+    private String q04;
+    private String q05;
+    private String q06;
+    private String q07;
+    private String q08;
+    private String q09;
     private String q10;
     private String q11;
     private String q12;
@@ -59,26 +71,26 @@ public class FormResponse implements Serializable {
 
     }
 
-    public FormResponse(String studentName, String studentEmailID, String circle, String subdivision, double latitude, double longitude, String name, String meterNumber, String mobileNumber, String dateTimeStamp, String q1, String q2, String q3, String q4, String q5, String q6, String q7, String q8, String q9, String q10, String q11, String q12, String q13, String q14, String q15, String q16, String q17, String q18, String q19, String q20, String q21, String q22, String q23, String q24, String q25, String q26, String q27, String q28, String q29, String q30) {
-        this.studentName = studentName;
-        this.studentEmailID = studentEmailID;
-        this.circle = circle;
-        this.subdivision = subdivision;
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.name = name;
-        this.meterNumber = meterNumber;
-        this.mobileNumber = mobileNumber;
-        this.dateTimeStamp = dateTimeStamp;
-        this.q1 = q1;
-        this.q2 = q2;
-        this.q3 = q3;
-        this.q4 = q4;
-        this.q5 = q5;
-        this.q6 = q6;
-        this.q7 = q7;
-        this.q8 = q8;
-        this.q9 = q9;
+    public FormResponse(String c, String d, String e, String f, double bLatitude, double bLongitude, String g, String h, String i, String a, String q01, String q02, String q03, String q04, String q05, String q06, String q07, String q08, String q09, String q10, String q11, String q12, String q13, String q14, String q15, String q16, String q17, String q18, String q19, String q20, String q21, String q22, String q23, String q24, String q25, String q26, String q27, String q28, String q29, String q30) {
+        this.c = c;
+        this.d = d;
+        this.e = e;
+        this.f = f;
+        this.bLatitude = bLatitude;
+        this.bLongitude = bLongitude;
+        this.g = g;
+        this.h = h;
+        this.i = i;
+        this.a = a;
+        this.q01 = q01;
+        this.q02 = q02;
+        this.q03 = q03;
+        this.q04 = q04;
+        this.q05 = q05;
+        this.q06 = q06;
+        this.q07 = q07;
+        this.q08 = q08;
+        this.q09 = q09;
         this.q10 = q10;
         this.q11 = q11;
         this.q12 = q12;
@@ -102,164 +114,164 @@ public class FormResponse implements Serializable {
         this.q30 = q30;
     }
 
-    public String getStudentName() {
-        return studentName;
+    public String getC() {
+        return c;
     }
 
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
+    public void setC(String c) {
+        this.c = c;
     }
 
-    public String getSignUrl() {
-        return signUrl;
+    public String getJ() {
+        return j;
     }
 
-    public void setSignUrl(String signUrl) {
-        this.signUrl = signUrl;
+    public void setJ(String j) {
+        this.j = j;
     }
 
-    public String getStudentEmailID() {
-        return studentEmailID;
+    public String getD() {
+        return d;
     }
 
-    public void setStudentEmailID(String studentEmailID) {
-        this.studentEmailID = studentEmailID;
+    public void setD(String d) {
+        this.d = d;
     }
 
-    public String getCircle() {
-        return circle;
+    public String getE() {
+        return e;
     }
 
-    public void setCircle(String circle) {
-        this.circle = circle;
+    public void setE(String e) {
+        this.e = e;
     }
 
-    public String getSubdivision() {
-        return subdivision;
+    public String getF() {
+        return f;
     }
 
-    public void setSubdivision(String subdivision) {
-        this.subdivision = subdivision;
+    public void setF(String f) {
+        this.f = f;
     }
 
-    public double getLatitude() {
-        return latitude;
+    public double getbLatitude() {
+        return bLatitude;
     }
 
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
+    public void setbLatitude(double bLatitude) {
+        this.bLatitude = bLatitude;
     }
 
-    public double getLongitude() {
-        return longitude;
+    public double getbLongitude() {
+        return bLongitude;
     }
 
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
+    public void setbLongitude(double bLongitude) {
+        this.bLongitude = bLongitude;
     }
 
-    public String getName() {
-        return name;
+    public String getG() {
+        return g;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setG(String g) {
+        this.g = g;
     }
 
-    public String getMeterNumber() {
-        return meterNumber;
+    public String getH() {
+        return h;
     }
 
-    public void setMeterNumber(String meterNumber) {
-        this.meterNumber = meterNumber;
+    public void setH(String h) {
+        this.h = h;
     }
 
-    public String getMobileNumber() {
-        return mobileNumber;
+    public String getI() {
+        return i;
     }
 
-    public void setMobileNumber(String mobileNumber) {
-        this.mobileNumber = mobileNumber;
+    public void setI(String i) {
+        this.i = i;
     }
 
-    public String getDateTimeStamp() {
-        return dateTimeStamp;
+    public String getA() {
+        return a;
     }
 
-    public void setDateTimeStamp(String dateTimeStamp) {
-        this.dateTimeStamp = dateTimeStamp;
+    public void setA(String a) {
+        this.a = a;
     }
 
-    public String getQ1() {
-        return q1;
+    public String getQ01() {
+        return q01;
     }
 
-    public void setQ1(String q1) {
-        this.q1 = q1;
+    public void setQ01(String q01) {
+        this.q01 = q01;
     }
 
-    public String getQ2() {
-        return q2;
+    public String getQ02() {
+        return q02;
     }
 
-    public void setQ2(String q2) {
-        this.q2 = q2;
+    public void setQ02(String q02) {
+        this.q02 = q02;
     }
 
-    public String getQ3() {
-        return q3;
+    public String getQ03() {
+        return q03;
     }
 
-    public void setQ3(String q3) {
-        this.q3 = q3;
+    public void setQ03(String q03) {
+        this.q03 = q03;
     }
 
-    public String getQ4() {
-        return q4;
+    public String getQ04() {
+        return q04;
     }
 
-    public void setQ4(String q4) {
-        this.q4 = q4;
+    public void setQ04(String q04) {
+        this.q04 = q04;
     }
 
-    public String getQ5() {
-        return q5;
+    public String getQ05() {
+        return q05;
     }
 
-    public void setQ5(String q5) {
-        this.q5 = q5;
+    public void setQ05(String q05) {
+        this.q05 = q05;
     }
 
-    public String getQ6() {
-        return q6;
+    public String getQ06() {
+        return q06;
     }
 
-    public void setQ6(String q6) {
-        this.q6 = q6;
+    public void setQ06(String q06) {
+        this.q06 = q06;
     }
 
-    public String getQ7() {
-        return q7;
+    public String getQ07() {
+        return q07;
     }
 
-    public void setQ7(String q7) {
-        this.q7 = q7;
+    public void setQ07(String q07) {
+        this.q07 = q07;
     }
 
-    public String getQ8() {
-        return q8;
+    public String getQ08() {
+        return q08;
     }
 
-    public void setQ8(String q8) {
-        this.q8 = q8;
+    public void setQ08(String q08) {
+        this.q08 = q08;
     }
 
-    public String getQ9() {
-        return q9;
+    public String getQ09() {
+        return q09;
     }
 
-    public void setQ9(String q9) {
-        this.q9 = q9;
+    public void setQ09(String q09) {
+        this.q09 = q09;
     }
 
     public String getQ10() {
@@ -433,10 +445,10 @@ public class FormResponse implements Serializable {
     @NonNull
     @Override
     public String toString() {
-        return "Student Name : " + this.getStudentName() + "\n" +
-                "Student Email ID : " + this.getStudentEmailID() + "\n" +
-                "Name : " + this.getName() + "\n" +
-                "Circle : " + this.getCircle() + "\n" +
-                "Time Stamp : " + this.getDateTimeStamp();
+        return "Student Name : " + this.getC() + "\n" +
+                "Student Email ID : " + this.getD() + "\n" +
+                "Name : " + this.getG() + "\n" +
+                "Circle : " + this.getE() + "\n" +
+                "Time Stamp : " + this.getA();
     }
 }

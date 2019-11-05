@@ -1,8 +1,6 @@
 package com.developersanjeev.uhbvn;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
@@ -27,8 +25,6 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
 import java.io.ByteArrayOutputStream;
-import java.util.HashMap;
-import java.util.Map;
 
 public class SignatureActivity extends AppCompatActivity {
 
@@ -105,7 +101,7 @@ public class SignatureActivity extends AppCompatActivity {
         }).addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
-                response.setSignUrl(uri.toString());
+                response.setJ(uri.toString());
                 dataRef.push().setValue(response);
                 showSuccessDialog();
             }

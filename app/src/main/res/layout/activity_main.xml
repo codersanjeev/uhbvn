@@ -583,17 +583,40 @@
                 layout="@layout/optional_questions_layout"
                 android:visibility="gone" />
 
-            <Button
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="8dp"
-                android:background="@drawable/custom_button"
-                android:onClick="submitRegion"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:text="Continue"
-                android:textColor="@android:color/white" />
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/custom_button"
+                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:onClick="clearForm"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Clear Form"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/custom_button"
+                    android:onClick="submitRegion"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Continue"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
