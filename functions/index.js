@@ -30,8 +30,20 @@ exports.copyDataToSheet = functions.database.ref("/data").onUpdate(async change 
 	var valueArray = [];
 	var tempArray = [];
 
+/***
+	[{key1:[{k1 : val1}, {k2 : val2}, {k3 : val3}, ...]}, 
+	{key2 : [{k1 : val1}, {k2 : val2}, {k3 : val3}, ...]}, 
+	{key3 : [{k1 : val1}, {k2 : val2}, {k3 : val3}, ...]}, 
+	{key4 : [{k1 : val1}, {k2 : val2}, {k3 : val3}, ...]},
+	................................]
+------------------------------------------
+	[[val1, val2, val3, ...],
+	[val1, val2, val3, ...],
+	[val1, val2, val3, ...],
+	[val1, val2, val3, ...],
+	........................]
+*/
 	Object.keys(data).forEach((key, index) => {
-		// data[key] == {circle : Rohtak, dateTime : 26-09-1997}
 		var temp = data[key];
 		Object.values(temp).forEach((value, index) => {
 			tempArray.push(value);
